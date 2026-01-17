@@ -1,0 +1,105 @@
+@use '../utils/variables';
+@use '../utils/mixins';
+
+.edit-content {
+    box-sizing: border-box;
+    background-color: white;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.edit-profile {
+    text-align: center;
+}
+
+.input-profile {
+    display: flex;
+    justify-content: center;
+}
+
+.input-wrapper-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-wrapper-profile label {
+    color: black;
+    width: 100px;
+}
+
+.input-wrapper-profile input {
+    padding: 7px;
+    font-size: 13px;
+    border-radius: 3px;
+    border-color: gainsboro;
+}
+
+.account-edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(70, 69, 69);
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.amount-edit {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+
+}
+
+.description-edit {
+    margin: 0;
+    color: white;
+}
+
+.account-title {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    color: white;
+}
+
+.account-content {
+    width: 100%;
+    flex: 1;
+}
+
+.arrow {
+    display: block;
+    width: 40px;
+    padding: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.account-content-wrapper.cta {
+    flex: 0;
+}
+
+@include mixins.min720 {
+    .account-edit {
+        flex-direction: row;
+    }
+
+    .account-content-wrapper.cta {
+        flex: 0;
+    }
+
+    .arrow {
+        width: 50px;
+    }
+}

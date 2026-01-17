@@ -1,0 +1,54 @@
+@use '../utils/variables';
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.main-nav a {
+    font-weight: bold;
+    color: variables.$color-dark-blue;
+}
+
+.main-nav a.router-link-exact-active {
+    color: variables.$color-primary;
+}
+
+.main-nav-item {
+    text-decoration: none;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    background-color: white;
+    font-weight: 500;
+    border: none;
+}
+
+.main-nav-item:hover {
+    text-decoration: underline;
+}
+
+.main-nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-logo-image {
+    max-width: 100%;
+    width: 200px;
+}
+
+i {
+    margin-right: 3px;
+}
+
+.user-name {
+    margin-right: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.user-name:hover {
+    text-decoration: underline;
+}
